@@ -10,7 +10,7 @@ function Tasks({tasks, deleteTask, toggleReminder}) {
             </div>
         )
     }
-    console.log(tasks);
+    
     return (
         <div>
             {tasks.map((task, index)=>{

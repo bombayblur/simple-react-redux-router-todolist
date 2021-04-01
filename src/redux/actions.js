@@ -35,8 +35,8 @@ export const setInitTasks = (content)=>{
 
 // Write a thunk function here.
 //
-export const fetchTasks = (dispatch, getState) => {
-    return async function () {
+export const fetchTasks = () => {
+    return async function (dispatch, getState) {
         let tasksList = await fetch('http://localhost:5000/tasks', {
             method: 'GET'
         });
